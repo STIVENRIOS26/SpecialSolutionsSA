@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Libre+Baskerville&display=swap"
+        rel="stylesheet">
+    <title>SPECIALIST SOLUTIONS</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/img/logo.png" alt="">
+        <b>SPECIALIST SOLUTIONS SA.</b>
+    </header>
+    <img class="icon" src="./assets/img/tiger_icon.png" alt=".">
+    <img class="logo-sura" src="./assets/img/sura-logo.png" alt="">
+    <main>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+
+                <!-- rol 1 Administrador -->
+                <li><a href="#">ADMINISTRADOR</a>
+                    <ul class="submenu">
+                        <li><a href="#">Information of Specialist</a>
+                            <ul class="subsubmenu">
+                                <li><a href="#openModal">Add a Specialist</a>
+                                    <div id="openModal" class="modals">
+                                        <div>
+                                            <a href="#close" title="Close" class="close">X</a>
+                                            <h3>
+                                                As an administrator you can add a specialist
+                                            </h3>
+                                            <form action="">
+                                                <fieldset>
+                                                    <label for="name">Full name </label>
+                                                    <input class="input" type="text" id="name" placeholder="Full name">
+
+                                                    <label for="id">Identification </label>
+                                                    <input class="input" type="number" id="id" placeholder="ID">
+
+                                                    <select class="input" name="" id="">
+                                                        <option value="">Doctor</option>
+                                                        <option value="">Dermatologist</option>
+                                                        <option value="">Psychiatrist</option>
+                                                        <option value="">Psychologist</option>
+                                                        <option value="">Another</option>
+                                                    </select>
+
+                                                    <label for="salary">Salary on $</label>
+                                                    <input class="input" type="number" id="salary" placeholder="Salary">
+
+                                                    <label for="entryDate">Date of entry into the system</label>
+                                                    <input class="input" type="date" name="" id="entryDate">
+
+                                                    <section class="send-cancel">
+                                                        <button>Send</button>
+                                                    </section>
+                                                    <section class="send-cancel">
+                                                        <button>Cancel</button>
+                                                    </section>
+
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#modalId">Consult a Specialist</a>
+                                    <div id="modalId" class="modals">
+                                        <div>
+                                            <a href="#close" title="Close" class="close">X</a>
+                                            <h3>
+                                                You have access to all specialists using their ID
+                                            </h3>
+                                            <form action="">
+                                                <fieldset>
+                                                    <label for="id">Write specialist's ID </label>
+                                                    <input class="input" type="number" id="id" placeholder="ID">
+
+                                                    <section class="send-cancel">
+                                                        <button>Send</button>
+                                                    </section>
+                                                    <section class="send-cancel">
+                                                        <button>Cancel</button>
+                                                    </section>
+
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#modalDelete">Remove a specialist</a>
+                                    <div id="modalDelete" class="modals">
+                                        <div>
+                                            <a href="#close" title="Close" class="close">X</a>
+                                            <h3>
+                                                To remove a specialist by ID
+                                            </h3>
+                                            <form action="">
+                                                <fieldset>
+                                                    <section>
+                                                        <label for="deleteId">Write Specialist's ID</label>
+                                                        <input class="input" type="number" id="deleteId"
+                                                            placeholder="ID">
+                                                        <label for="Specialist's name">Write specialist's name </label>
+                                                        <input class="input" type="text" id="Specialist's name"
+                                                            placeholder="Optional">
+                                                    </section>
+                                                    <section class="send-cancel">
+                                                        <button>Send</button>
+                                                    </section>
+                                                    <section class="send-cancel">
+                                                        <button>Cancel</button>
+                                                    </section>
+
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- rol 2. especialista -->
+                <li><a href="#">SPECIALIST</a>
+                    <ul class="submenu">
+                        <li><a href="#modalHour">Hourly report</a>
+                            <div id="modalHour" class="modals">
+                                <div>
+                                    <a href="#close" title="Close" class="close">X</a>
+                                    <h3>
+                                        To report the number of hours that you worked per month
+                                    </h3>
+                                    <form action="">
+                                        <fieldset>
+                                            <label for="id">Write your ID </label>
+                                            <input class="input" type="number" id="id" placeholder="ID">
+                                            <label for="hoursWorked"> write the amount of hours </label>
+                                            <input class="input" type="number" id="hoursWorked"
+                                                placeholder="Hours Worked">
+                                            <label for="month">Select the month</label>
+                                            <select class="input" name="" id="month">
+                                                <option value="">Select...</option>
+                                                <option value="">January</option>
+                                                <option value="">February</option>
+                                                <option value="">March</option>
+                                                <option value="">April</option>
+                                                <option value="">May</option>
+                                                <option value="">June</option>
+                                                <option value="">July</option>
+                                                <option value="">August</option>
+                                                <option value="">September</option>
+                                                <option value="">October</option>
+                                                <option value="">Novmber</option>
+                                                <option value="">December</option>
+                                            </select>
+                                            <section class="send-cancel">
+                                                <button>Send</button>
+                                            </section>
+                                            <section class="send-cancel">
+                                                <button>Cancel</button>
+                                            </section>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li><a href="#modalSalary">Consult Salary</a></li>
+                        <div id="modalSalary" class="modals">
+                            <div>
+                                <a href="#close" title="Close" class="close">X</a>
+                                <h3>
+                                    To consult your salary
+                                </h3>
+                                <form action="">
+                                    <fieldset>
+                                        <label for="id">Write your ID </label>
+                                        <input class="input" type="number" id="id" placeholder="ID">
+                                        <label for="optionalName"> Write your full name</label>
+                                        <input class="input" type="text" id="optionalName" placeholder="Optional">
+
+
+                                        <section class="send-cancel">
+                                            <button>Send</button>
+                                        </section>
+                                        <section class="send-cancel">
+                                            <button>Cancel</button>
+                                        </section>
+
+                                        <p>
+                                            Keep in mind that the hour
+                                            for any specialty is $150000
+                                            and that a withholding tax
+                                            of 4% is applied to the salary.
+                                        </p>
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+
+                        <li><a href="#modalConsultSpec">Consult Specialist</a></li>
+                        <div id="modalConsultSpec" class="modals">
+                            <div>
+                                <a href="#Close" title="Close" class="close">X</a>
+                                <form action="">
+                                    <fieldset>
+                                        <label for="id">Write your ID </label>
+                                        <input class="input" type="number" id="id" placeholder="ID">
+                                        <label for="optionalName"> Write your full name</label>
+                                        <input class="input" type="text" id="optionalName" placeholder="Optional">
+
+
+                                        <section class="send-cancel">
+                                            <button>Send</button>
+                                        </section>
+                                        <section class="send-cancel">
+                                            <button>Cancel</button>
+                                        </section>
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+
+                <!-- rol3 3 paciente -->
+                <li><a href="#">PATIENT</a>
+                    <ul class="submenu">
+                        <li><a href="#modalConsAsPatient">Consult a Specialist</a>
+                            <div id="modalConsAsPatient" class="modals">
+                                <div>
+                                    <a href="#close" title="Close" class="close">X</a>
+                                    <h3>
+                                        To search your specialist
+                                    </h3>
+                                    <form action="">
+                                        <fieldset>
+                                            <label for="id">Write your ID </label>
+                                            <input class="input" type="number" id="id" placeholder="ID">
+
+                                            <section class="send-cancel">
+                                                <button>Send</button>
+                                            </section>
+                                            <section class="send-cancel">
+                                                <button>Cancel</button>
+                                            </section>
+
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Help</a>
+                    <ul class="submenu">
+                        <li><a href="">❔Help</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <img class="big-icon" src="./assets/img/big-tiger.png" alt="">
+        
+            <img class="sura-logo" src="./assets/img/sura-logo.png" alt="">
+        </div>
+    </main>
+    <!-- pie de pagina -->
+    <footer>
+
+        <div class="information">
+            <h1>
+                We contact to you
+            </h1>
+
+            <form id="second" action="">
+                <fieldset class="fieldsetForm">
+                    <label for="nombre">Full name</label>
+                    <input class="inputForm" type="text" placeholder="Nombre">
+                    <label for="number">Contact number</label>
+                    <input class="inputForm" type="number" placeholder="Contacto">
+                    <label for="correo">Email</label>
+                    <input class="inputForm" type="email" placeholder="Correo">
+                    <section class="send-cancel">
+                        <button>Send</button>
+                        <button>Cancel</button>
+                    </section>
+
+                </fieldset>
+            </form>  
+        </div>
+
+        <div class="about">
+            <h1>
+                About us
+            </h1>
+        </div>
+        <a href="#" target="_blank">
+            <img class="coworkers" src="./assets/img/coworkers.png" alt="">
+        </a>
+        <h3 class="media">You can meet us on our social media</h3>
+
+        <nav>
+            <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">
+                <img class="gmail" src="./assets/img/gmail-icon.png" alt="">
+            </a>
+            <a href="https://github.com/dashboard" target="_blank">
+                <img class="github" src="./assets/img/github-icon.png" alt="">
+            </a>
+            <a href=" https://wa.me/+573167277987" target="_blank">
+                <img class="whatsapp" src="./assets/img/whatsapp-icon.png" alt="">
+            </a>
+        </nav>
+
+    </footer>
+
+
+
+</body>
+
+</html>

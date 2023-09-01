@@ -1,0 +1,351 @@
+body {
+    font-family: 'Barriecito', cursive;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* encabezado */
+header {
+    background-color: #5BD1D7;
+    height: 80px;
+    width: 100%;
+}
+header img{
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    margin-top: -46px;
+    left: 2px;
+}
+
+.logo-sura{
+    position: absolute;
+    left: 1080px;
+    top: 0px;
+    width: 150px;
+    height: 70px;
+
+}
+
+.icon{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 4vw;
+    top: 1px;
+}
+header b{
+    position: absolute;
+    margin-top: 30px;
+    left: 150px;
+}
+nav ul {
+    display: flex;
+    background-color: #0033A0;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+/* menu general */
+.menu ul li:hover {
+    background-color: #0033A0;
+}
+
+.rols:hover{
+    background-color: #0033A0;
+    width: 10%;
+    height: 10%;
+
+}
+
+.menu {
+    background-color: #0033A0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* .menu ul li {
+    display: inline-block;
+    position: relative;
+} */
+
+.menu ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background-color: #5BD1D7;
+    border: 1px solid #0033A0;
+    border-radius: 5px;
+    z-index: 1;
+}
+.menu ul li:hover .submenu {
+    display: block;
+}
+
+.menu .subsubmenu {
+    display: none;
+    position: absolute;
+    background-color: #5BD1D7;
+    border: 1px solid #0033A0;
+    border-radius: 5px;
+    left: 100%;
+    top: 10px;
+    z-index: 2;
+} 
+
+.menu .submenu li:hover .subsubmenu {
+    display: block;
+}
+
+.menu .subsubmenu li {
+    width: 100%;
+}
+
+.menu .subsubmenu li a {
+    padding: 8px 15px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.menu .subsubmenu li a:hover {
+    background-color: #0033A0;
+}
+
+/* formularios */
+form {
+    width: 240px;
+    padding: 15px;
+}
+
+fieldset {
+    border-color: #0033A0;
+    border-radius: 5px;
+    width: 200px;
+    
+}
+option{
+    background-color: #5BD1D7;
+    color: #000;
+    border: 1px solid #0033A0;
+    border-radius: 5px;
+    
+}
+.input {
+    background-color: #FFF5E1;
+    width: 185px;
+    padding: 3px 10px;
+    border: 1px solid #0033A0;
+    border-radius: 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* boton enviar y cancelar */
+button {
+    background-color: #FFF5E1;
+    width: 185px;
+    padding: 3px 10px;
+    border: 1px solid #0033A0;
+    border-radius: 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.send-cancel {
+    display: flex;
+    justify-content: center;
+}
+
+.send-cancel button {
+    width: 105px;
+    height: 25px;
+    background-color: #fff;
+    border: 2px solid #0033A0;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.send-cancel button:hover{
+    background-color: #0033A0;
+    border: solid #fff;
+    width: 100px;
+    height: 40px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    cursor: pointer;
+}
+
+/* modal */
+
+.modals {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: #5BD1D799;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modals:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modals > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #5BD1D7);
+	background: -webkit-linear-gradient(#fff, #5BD1D7);
+	background: -o-linear-gradient(#fff, #5BD1D7);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+/* imagenes main */
+.big-icon{
+    position: absolute;
+    left: 160px;
+    bottom: -54px;
+    width: 75%;
+    height: 75%;
+}
+.sura-logo{
+    position: absolute;
+    left: 200px;
+    margin: 50px;
+}
+
+/* pie de pagina */
+footer{
+    background-color: #2c2c2c;
+    width: 100%;
+    height: 100%;
+    margin-top: 533.4px;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.about{
+    position: absolute;
+    margin: 20px;
+    left: 200px;
+}
+
+.information{
+    position: absolute;
+    margin: 20px;
+    right: 150px;
+}
+
+.coworkers{
+    width: 300px;
+    height: 300px;
+    padding-top: 70px;
+    margin-left: 150px;
+}
+/* segundo formulario */
+
+#second{
+    position: absolute;
+    left: -15px;
+    
+}
+
+.fieldsetForm {
+    box-shadow: 0 0 15px 0 #5BD1D7;
+    border: solid 4px #0033A0;
+    border-radius: 5px;
+    width: 250px;
+    height: 235px;
+}
+
+.inputForm {
+    background-color: #FFF5E1;
+    width: 185px;
+    padding: 3px 10px;
+    border: 1px solid #0033A0;
+    border-radius: 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+/* iconos de enlace */
+.media{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.gmail{
+    width: 60px;
+    height: 60px;
+    padding-right: 10px;
+}
+
+.github{
+    width: 45px;
+    height: 45px;
+    padding: 7px;
+    padding-right: 8px;
+}
+
+.whatsapp{
+    width: 58px;
+    height: 58px;
+    padding-left: 3px;
+}
+
+
